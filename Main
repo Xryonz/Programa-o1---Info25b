@@ -1,0 +1,18 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package com.mycompany.progamacaoo1;
+
+/**
+ *
+ * @author aluno
+ */
+public class Main {
+    public static void main(String[] args) {
+        Estudante didi = new Estudante("Didi", "F", "Info");
+        didi.getNome();
+        didi.getGenero();
+        didi.getMatricula();
+    }
+}
