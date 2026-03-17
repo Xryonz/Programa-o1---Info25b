@@ -1,9 +1,9 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  */
+package com.mycompany.programacao1;
 
-package com.mycompany.progamacaoo1;
-
+import java.util.Date;
 import javax.xml.crypto.Data;
 
 /**
@@ -11,36 +11,35 @@ import javax.xml.crypto.Data;
  * @author aluno
  */
 public class Estudante {
-        private String nome;
-        private Data dataNascimento;
-        private String cpf;
-        private String genero;
-        private String matricula;
-        private String email;
 
-    public Estudante(String nome,String genero, String matricula) {
-        this.setNome(nome);
-        this.setGenero(genero);
-        this.setMatricula(matricula);
+    private String nome;
+    private String cpf;
+    private Date dataDeNascimento;
+    private char genero;
+    private String enderecoEletronico;
+    private int telefoneDeContato;
+    private String anoDeIngresso;
+    private String semestreDeIngresso;
+    private boolean situacaoAcademica;
+
+    public Estudante(String a, String s, String c) {
+        this.anoDeIngresso = a;
+        this.semestreDeIngresso = s;
+        System.out.println(getCodigo(c));
+
     }
 
-        
-        
-        
+    public String getCodigo(String c) {
+        String codigo = anoDeIngresso + semestreDeIngresso + c ;
+        return codigo;
+    }
+
     public String getNome() {
         return nome;
     }
 
     public void setNome(String nome) {
         this.nome = nome;
-    }
-
-    public Data getDataNascimento() {
-        return dataNascimento;
-    }
-
-    public void setDataNascimento(Data dataNascimento) {
-        this.dataNascimento = dataNascimento;
     }
 
     public String getCpf() {
@@ -51,32 +50,60 @@ public class Estudante {
         this.cpf = cpf;
     }
 
-    public String getGenero() {
+    public Date getDataDeNascimento() {
+        return dataDeNascimento;
+    }
+
+    public void setDataDeNascimento(Date dataDeNascimento) {
+        this.dataDeNascimento = dataDeNascimento;
+    }
+
+    public char getGenero() {
         return genero;
     }
 
-    public void setGenero(String genero) {
+    public void setGenero(char genero) {
         this.genero = genero;
     }
 
-    public String getMatricula() {
-        return matricula;
+    public String getEnderecoEletronico() {
+        return enderecoEletronico;
     }
 
-    public void setMatricula(String matricula) {
-        this.matricula = matricula;
+    public void setEnderecoEletronico(String enderecoEletronico) {
+        this.enderecoEletronico = enderecoEletronico;
     }
 
-    public String getEmail() {
-        return email;
+    public int getTelefoneDeContato() {
+        return telefoneDeContato;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setTelefoneDeContato(int telefoneDeContato) {
+        this.telefoneDeContato = telefoneDeContato;
     }
-        
-        
-        
-      
-        
+
+    public String getAnoDeIngresso() {
+        return anoDeIngresso;
+    }
+
+    public void setAnoDeIngresso(String anoDeIngresso) {
+        this.anoDeIngresso = anoDeIngresso;
+    }
+
+    public String getSemestreDeIngresso() {
+        return semestreDeIngresso;
+    }
+
+    public void setSemestreDeIngresso(String semestreDeIngresso) {
+        this.semestreDeIngresso = semestreDeIngresso;
+    }
+
+    public boolean isSituacaoAcademica() {
+        return situacaoAcademica;
+    }
+                                                                          
+    public void setSituacaoAcademica(boolean situacaoAcademica) {
+        this.situacaoAcademica = situacaoAcademica;
+    }
+
 }
