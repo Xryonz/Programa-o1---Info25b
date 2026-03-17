@@ -1,0 +1,75 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package com.mycompany.programacao1;
+
+/**
+ *
+ * @author aluno
+ */
+public class Disciplina {
+    private String nome;
+    private double cargaHoraria;
+    private String objetivo;
+    private String conteudoPragmatico;
+    private String referenciaBibliografica;
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public double getCargaHoraria() {
+        return cargaHoraria;
+    }
+
+    public void setCargaHoraria(double cargaHoraria) {
+        this.cargaHoraria = cargaHoraria;
+    }
+
+    public String getObjetivo() {
+        return objetivo;
+    }
+
+    public void setObjetivo(String objetivo) {
+        this.objetivo = objetivo;
+    }
+
+    public String getConteudoPragmatico() {
+        return conteudoPragmatico;
+    }
+
+    public void setConteudoPragmatico(String conteudoPragmatico) {
+        this.conteudoPragmatico = conteudoPragmatico;
+    }
+
+    public String getReferenciaBibliografica() {
+        return referenciaBibliografica;
+    }
+
+    public void setReferenciaBibliografica(String referenciaBibliografica) {
+        this.referenciaBibliografica = referenciaBibliografica;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    public void ementa(){
+        System.out.println("Disciplina: "+this.nome);
+        System.out.println("Carga horária: "+this.cargaHoraria);
+        System.out.println("Objetivo: "+this.objetivo);
+        System.out.println("Conteudo pragmático: "+ this.conteudoPragmatico);
+        System.out.println("Referencia bibliografica: "+this.referenciaBibliografica);
+        
+        
+    }
+    
+}
