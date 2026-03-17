@@ -1,0 +1,103 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package com.mycompany.programacao1;
+
+import java.util.Date;
+
+/**
+ *
+ * @author aluno
+ */
+public class Professor {
+    private String nome;
+    private int numeroIdentiicacao;
+    private String enderecoEletronico;
+    private int telefoneDeContato;
+    private String titulacaoAcademica;
+    private String areaDeAtuacao;
+    private int regimeDeTrabalho;
+    private Date dataDeIngresso;
+    private String formacao;
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public int getNumeroIdentiicacao() {
+        return numeroIdentiicacao;
+    }
+
+    public void setNumeroIdentiicacao(int numeroIdentiicacao) {
+        this.numeroIdentiicacao = numeroIdentiicacao;
+    }
+
+    public String getEnderecoEletronico() {
+        return enderecoEletronico;
+    }
+
+    public void setEnderecoEletronico(String enderecoEletronico) {
+        this.enderecoEletronico = enderecoEletronico;
+    }
+
+    public int getTelefoneDeContato() {
+        return telefoneDeContato;
+    }
+
+    public void setTelefoneDeContato(int telefoneDeContato) {
+        this.telefoneDeContato = telefoneDeContato;
+    }
+
+    public String getTitulacaoAcademica() {
+        return titulacaoAcademica;
+    }
+
+    public void setTitulacaoAcademica(String titulacaoAcademica) {
+        this.titulacaoAcademica = titulacaoAcademica;
+    }
+
+    public String getAreaDeAtuacao() {
+        return areaDeAtuacao;
+    }
+
+    public void setAreaDeAtuacao(String areaDeAtuacao) {
+        this.areaDeAtuacao = areaDeAtuacao;
+    }
+
+    public int getRegimeDeTrabalho() {
+        return regimeDeTrabalho;
+    }
+
+    public void setRegimeDeTrabalho(int regimeDeTrabalho) {
+        this.regimeDeTrabalho = regimeDeTrabalho;
+    }
+
+    public Date getDataDeIngresso() {
+        return dataDeIngresso;
+    }
+
+    public void setDataDeIngresso(Date dataDeIngresso) {
+        this.dataDeIngresso = dataDeIngresso;
+    }
+
+    public String getFormacao() {
+        return formacao;
+    }
+
+    public void setFormacao(String formacao) {
+        this.formacao = formacao;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+}
