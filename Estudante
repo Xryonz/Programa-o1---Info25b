@@ -21,15 +21,16 @@ public class Estudante {
     private String anoDeIngresso;
     private String semestreDeIngresso;
     private boolean situacaoAcademica;
+    private String codigo;
 
     public Estudante(String a, String s, String c) {
         this.anoDeIngresso = a;
         this.semestreDeIngresso = s;
-        System.out.println(getCodigo(c));
+        this.codigo = getCodigoPK(c);
 
     }
 
-    public String getCodigo(String c) {
+    public String getCodigoPK(String c) {
         String codigo = anoDeIngresso + semestreDeIngresso + c ;
         return codigo;
     }
@@ -104,6 +105,10 @@ public class Estudante {
                                                                           
     public void setSituacaoAcademica(boolean situacaoAcademica) {
         this.situacaoAcademica = situacaoAcademica;
+    }
+
+    public String getCodigo() {
+        return codigo;
     }
 
 }
